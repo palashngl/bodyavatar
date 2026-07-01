@@ -1,0 +1,43 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Training artifacts (large — use GitHub Releases for checkpoints)
+runs/**
+!runs/body_sota_comparison.json
+!runs/body_neuman_v2/
+runs/body_neuman_v2/**
+!runs/body_neuman_v2/comparison.json
+!runs/body_neuman_v2/neuman_benchmark.json
+!runs/sota_metrics_analysis.json
+!runs/body_literature_comparison.json
+!runs/body_literature_synthetic.json
+!runs/comparison_v4.json
+
+# Raw downloads (regenerate with scripts/prepare_synthetic.py)
+data/raw/
+
+# Optional: keep processed demo data out of git (large npz)
+data/processed/
+data/body/raw/
+data/body/processed/
+!data/body/splits/
+!data/body/neuman_manifest.json
+
+# MediaPipe model (auto-downloaded on first run)
+osa_body/assets/*.task
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Keep docs result images
+!docs/results/*.png
+!docs/results/metrics.json
+!docs/body_results/*.png

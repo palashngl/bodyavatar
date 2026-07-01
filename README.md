@@ -178,12 +178,11 @@ These methods use **SMPL-X + 3DGS** on different eval protocols — **not direct
 
 ## Installation
 
-Clone the full implementation from OSA:
+Clone **this repository** (all BodyAvatar code is here):
 
 ```bash
-git clone https://github.com/palashngl/OSA.git
-cd OSA
-git checkout feature/bodyavatar-v3-sota
+git clone https://github.com/palashngl/bodyavatar.git
+cd bodyavatar
 
 python -m venv .venv
 source .venv/bin/activate
@@ -192,6 +191,8 @@ pip install -r requirements.txt
 export PYTHONPATH=$(pwd)
 export TORCH_COMPILE_DISABLE=1
 ```
+
+> **Note:** BodyAvatar code also exists on the OSA repo branch [`feature/bodyavatar-v3-sota`](https://github.com/palashngl/OSA/tree/feature/bodyavatar-v3-sota) — but it is **not on OSA `main`** yet. Use **this repo** for the full-body codebase.
 
 **Requirements:** Python 3.10+, CUDA GPU (recommended), ~8 GB VRAM for training.
 
@@ -267,23 +268,25 @@ python scripts/body/sota_metrics_analysis.py
 
 ---
 
-## Project structure (in OSA repo)
+## Project structure
 
 ```
-osa_body/
-  model.py              # BodyAvatar v2
-  model_v3.py           # BodyAvatar v3 (U-Net refiner)
-  retrieval_bank.py     # KNN + piecewise warp bank
-  preprocess.py         # MediaPipe pose + masks
-  baselines.py          # 9 comparison baselines
-  literature_sota.py      # Published paper reference table
-
-scripts/body/
-  video_to_avatar.py    # ★ One-command video → avatar
-  run_best_pipeline.py  # Full train + benchmark pipeline
-  prepare_neuman.py     # Download + preprocess NeuMan
-  compare_neuman.py     # vs baselines on real video
-  compare_sota.py       # vs baselines on synthetic
+bodyavatar/
+├── osa_body/              # ★ BodyAvatar model + data pipeline
+│   ├── model.py           #   v2: retrieval + conv refiner
+│   ├── model_v3.py        #   v3: U-Net refiner (recommended)
+│   ├── retrieval_bank.py  #   KNN + piecewise warp
+│   ├── preprocess.py      #   MediaPipe pose extraction
+│   └── baselines.py       #   9 comparison baselines
+├── scripts/body/          # ★ Training, eval, inference scripts
+│   ├── video_to_avatar.py #   One command: MP4 → avatar MP4
+│   ├── run_best_pipeline.py
+│   ├── prepare_neuman.py
+│   └── compare_neuman.py
+├── osa/                   # Shared utilities (encoder, metrics, warps)
+├── data/body/splits/      # Dataset split configs
+├── assets/                # Example result images
+└── docs/ROADMAP_CVPR.md   # Path to conference-scale SOTA
 ```
 
 ---
@@ -321,7 +324,7 @@ If you use BodyAvatar in your research, please cite:
   author       = {palashngl},
   year         = {2026},
   howpublished = {\url{https://github.com/palashngl/bodyavatar}},
-  note         = {Implementation: \url{https://github.com/palashngl/OSA}}
+  note         = {Code: \url{https://github.com/palashngl/bodyavatar}}
 }
 ```
 
@@ -335,6 +338,6 @@ MIT License — see [LICENSE](LICENSE).
 
 ## Related
 
-- **[OSA](https://github.com/palashngl/OSA)** — Face avatar (OSA v4) + full BodyAvatar implementation
+- **[OSA](https://github.com/palashngl/OSA)** — Related face avatar (OSA v4); BodyAvatar branch: `feature/bodyavatar-v3-sota`
 - **[NeuMan dataset](https://neuman.is.tue.mpg.de/)** — Real in-the-wild monocular benchmark
 - **[MediaPipe Pose](https://developers.google.com/mediapipe/solutions/vision/pose_landmarker)** — 33-point pose extraction

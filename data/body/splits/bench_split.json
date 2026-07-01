@@ -1,0 +1,1050 @@
+{
+  "train": [
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 160,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 216,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 28,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 132,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 56,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 96,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 224,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 120,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 32,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 216,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 16,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 148,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 100,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 60,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 80,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 104,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 200,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 212,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 220,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 228,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 200,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 36,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 132,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 180,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 76,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 216,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 152,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 140,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 12,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 108,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 32,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 68,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 32,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 152,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 36,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 208,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 96,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 160,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 48,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 28,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 148,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 184,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 128,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 16,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 204,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 40,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 8,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 100,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 84,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 112,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 72,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 36,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 92,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 48,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 124,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 136,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 184,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 0,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 16,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 132,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 108,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 112,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 104,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 196,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 12,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 108,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 192,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 52,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 116,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 44,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 20,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 224,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 192,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 144,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 128,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 168,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 0,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 24,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 200,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 112,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 128,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 4,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 180,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 172,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 72,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 204,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 80,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 196,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 56,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 212,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 60,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 144,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 84,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 164,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 140,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 224,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 116,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 4,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 28,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 64,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 164,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 52,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 168,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 48,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 104,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 40,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 156,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 152,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 184,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 64,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 40,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 20,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 116,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 20,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 148,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 220,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 4,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 168,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 68,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 156,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 172,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 212,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 72,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 88,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 160,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 8,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 192,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 88,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 44,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 120,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 52,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 68,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 188,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 228,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 44,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 172,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 136,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 12,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 228,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 208,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 92,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 124,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 60,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 8,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 204,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 84,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 124,
+      "clip_length": 8
+    }
+  ],
+  "val": [
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 64,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 176,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 180,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 136,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 120,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 0,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 140,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 76,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 196,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 24,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 176,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 92,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 176,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 164,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 208,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 88,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 76,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 188,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 24,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 188,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 220,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 96,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 56,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 100,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_0",
+      "path": "data/body/processed/body_0/processed.npz",
+      "start": 144,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_1",
+      "path": "data/body/processed/body_1/processed.npz",
+      "start": 156,
+      "clip_length": 8
+    },
+    {
+      "subject": "body_2",
+      "path": "data/body/processed/body_2/processed.npz",
+      "start": 80,
+      "clip_length": 8
+    }
+  ]
+}
