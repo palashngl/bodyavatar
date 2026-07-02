@@ -193,3 +193,35 @@ class BodyPoseTracker:
         }
         (output_dir / "meta.json").write_text(json.dumps(meta, indent=2))
         return meta
+
+
+class LiveBodyPoseTracker(BodyPoseTracker):
+    """Reuse one landmarker for webcam / streaming (IMAGE mode)."""
+
+    def __init__(self, image_size: int = 384) -> None:
+        super().__init__(image_size=image_size)
+        model_path = ensure_pose_model()
+        opts = vision.PoseLandmarkerOptions(
+            base_options=base_options_module.BaseOptions(model_asset_path=str(model_path)),
+            running_mode=vision.RunningMode.IMAGE,
+            num_poses=1,
+            min_pose_detection_confidence=0.5,
+            min_pose_presence_confidence=0.5,
+        )
+        self._landmarker = vision.PoseLandmarker.create_from_options(opts)
+
+    def process_frame(self, frame_bgr: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray] | None:
+        rgb = cv2.cvtColor(frame_bgr, cv2.COLOR_BGR2RGB)
+        h, w = rgb.shape[:2]
+        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
+        result = self._landmarker.detect(mp_image)
+        pts = self._landmarks_from_result(result, w, h, 0, 0)
+        if pts is None:
+            return None
+        norm_rgb, norm_lmk = self._normalize_frame(rgb, pts)
+        mask = self._landmark_mask(norm_lmk, self.image_size)
+        frame_f = norm_rgb.astype(np.float32) / 255.0
+        return frame_f, norm_lmk.astype(np.float32), mask
+
+    def close(self) -> None:
+        self._landmarker.close()

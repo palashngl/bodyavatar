@@ -31,9 +31,27 @@ class BodyVideoDataset(Dataset):
     def __len__(self) -> int:
         return len(self.clips)
 
+    def _npz_path(self, meta: dict) -> Path:
+        direct = self.data_root / meta["subject"] / "processed.npz"
+        if direct.is_file():
+            return direct
+        legacy = Path(meta["path"])
+        if legacy.is_file():
+            return legacy
+        for root in (
+            Path.cwd(),
+            self.data_root.parent.parent,
+            Path("/home/server/Projects/OSA"),
+            Path("/home/server/Projects/bodyavatar"),
+        ):
+            candidate = root / legacy
+            if candidate.is_file():
+                return candidate
+        return direct
+
     def __getitem__(self, index: int) -> dict:
         meta = self.clips[index]
-        data = np.load(meta["path"])
+        data = np.load(self._npz_path(meta))
         start = meta["start"]
         end = start + meta["clip_length"]
         frames = data["frames"][start:end]

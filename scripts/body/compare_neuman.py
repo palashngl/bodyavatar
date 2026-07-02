@@ -27,13 +27,19 @@ from osa_body.baselines import (
 from osa_body.dataset import BodyVideoDataset, collate_fn
 from osa_body.model import BodyAvatarModel
 from osa_body.model_v3 import BodyAvatarModelV3
+from osa_body.model_v4 import BodyAvatarModelV4
 from osa_body.retrieval_bank import BodyTrainBank
 
 
 def load_model(ckpt_path: Path, device: torch.device, version: str = "auto"):
     ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
     model_type = ckpt.get("model_type", "body_v2")
-    if version == "v3" or (version == "auto" and "v3" in model_type):
+    if version == "v4" or (version == "auto" and "v4" in model_type):
+        model = BodyAvatarModelV4(
+            image_size=ckpt.get("args", {}).get("image_size", 384),
+            knn_k=ckpt.get("args", {}).get("knn_k", 5),
+        ).to(device)
+    elif version == "v3" or (version == "auto" and "v3" in model_type):
         model = BodyAvatarModelV3(
             image_size=ckpt.get("args", {}).get("image_size", 384),
             knn_k=ckpt.get("args", {}).get("knn_k", 5),
@@ -120,7 +126,7 @@ def main() -> None:
     p.add_argument("--checkpoint-dir", default="runs/body_neuman_v2")
     p.add_argument("--output", default="runs/body_neuman_v2/comparison.json")
     p.add_argument("--gpu", type=int, default=0)
-    p.add_argument("--model-version", default="auto", choices=["auto", "v2", "v3"])
+    p.add_argument("--model-version", default="auto", choices=["auto", "v2", "v3", "v4"])
     args = p.parse_args()
 
     device = torch.device(f"cuda:{args.gpu}" if torch.cuda.is_available() else "cpu")

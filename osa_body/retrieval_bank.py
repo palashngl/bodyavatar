@@ -43,6 +43,9 @@ class BodyTrainBank:
         self._frames: dict[str, torch.Tensor] = {}
         self._landmarks: dict[str, torch.Tensor] = {}
         self._orig_idx: dict[str, torch.Tensor] = {}
+        self._warp_cache: dict[tuple, torch.Tensor] = {}
+        self._cache_max = 4096
+        self._gpu_subject: str | None = None
 
     @staticmethod
     def _frame_indices_from_clips(clips: list[dict]) -> dict[str, set[int]]:
@@ -77,6 +80,29 @@ class BodyTrainBank:
             paths = [p for p in paths if p.parent.name in allow]
         for p in paths:
             self._load(p.parent.name)
+
+    def pin_to_gpu(self, subject: str, device: torch.device | None = None) -> None:
+        """Keep train bank on GPU for faster inference."""
+        self._load(subject)
+        dev = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self._frames[subject] = self._frames[subject].to(dev, non_blocking=True)
+        self._landmarks[subject] = self._landmarks[subject].to(dev, non_blocking=True)
+        self._orig_idx[subject] = self._orig_idx[subject].to(dev)
+        self._gpu_subject = subject
+
+    def _cache_key(
+        self,
+        subject: str,
+        dst_lmk: torch.Tensor,
+        exclude_indices: set[int] | None,
+        k: int,
+    ) -> tuple:
+        lm = dst_lmk.detach().cpu().numpy().round(1).tobytes()
+        ex = tuple(sorted(exclude_indices or ()))
+        return (subject, lm, ex, k)
+
+    def clear_cache(self) -> None:
+        self._warp_cache.clear()
 
     def subjects(self) -> list[str]:
         return sorted({p.parent.name for p in self.data_root.glob("*/processed.npz")})
@@ -123,20 +149,30 @@ class BodyTrainBank:
         if dst_lmk.dim() == 3:
             dst_lmk = dst_lmk[0]
         device = dst_lmk.device
+        key = self._cache_key(subject, dst_lmk, exclude_indices, k)
+        cached = self._warp_cache.get(key)
+        if cached is not None:
+            return cached.to(device)
         bank_frames, bank_lmks = self._filter_bank(subject, device, exclude_indices)
         dist = self._landmark_distance(bank_lmks, dst_lmk)
         k = min(k, len(dist))
         vals, idxs = torch.topk(dist, k=k, largest=False)
         warped = []
-        weights = []
+        # Landmark distances are O(10²–10³); tau must match that scale (v2 used 1/d).
+        tau = max(float(vals.min().item()) * 0.35, 8.0)
+        log_w = -(vals / tau)
+        log_w = log_w - log_w.max()
+        weights = torch.exp(log_w)
+        weights = weights / weights.sum().clamp(min=1e-8)
         dst = dst_lmk.unsqueeze(0)
-        for d, idx in zip(vals, idxs):
-            i = int(idx.item())
-            warped.append(self._warp(bank_frames[i : i + 1], bank_lmks[i : i + 1], dst))
-            weights.append(1.0 / (float(d.item()) + 1e-4))
-        w = torch.tensor(weights, device=device, dtype=warped[0].dtype)
-        w = w / w.sum()
-        return sum(w[i] * warped[i] for i in range(len(warped)))
+        for i, idx in enumerate(idxs):
+            j = int(idx.item())
+            warped.append(self._warp(bank_frames[j : j + 1], bank_lmks[j : j + 1], dst))
+        out = sum(weights[i] * warped[i] for i in range(len(warped)))
+        if len(self._warp_cache) >= self._cache_max:
+            self._warp_cache.pop(next(iter(self._warp_cache)))
+        self._warp_cache[key] = out.detach().cpu()
+        return out
 
     @torch.no_grad()
     def batch_knn_blend_warps(

@@ -1,23 +1,8 @@
-from .extended_baselines import (
-    KNNBlendWarpBaseline,
-    NearestTrainPiecewiseBaseline,
-    NearestTrainProcrustesBaseline,
-    NeutralAtlasPiecewiseBaseline,
-)
-from .landmark_warp import (
-    FirstFrameWarpBaseline,
-    NearestTrainTPSBaseline,
-    NearestTrainWarpBaseline,
-    SubjectMeanWarpBaseline,
-)
+from .tps_warp import tps_warp_image
+from .warp_utils import piecewise_affine_warp_image, procrustes_warp_image
 
 __all__ = [
-    "FirstFrameWarpBaseline",
-    "SubjectMeanWarpBaseline",
-    "NearestTrainWarpBaseline",
-    "NearestTrainTPSBaseline",
-    "NearestTrainProcrustesBaseline",
-    "NearestTrainPiecewiseBaseline",
-    "KNNBlendWarpBaseline",
-    "NeutralAtlasPiecewiseBaseline",
+    "piecewise_affine_warp_image",
+    "procrustes_warp_image",
+    "tps_warp_image",
 ]
